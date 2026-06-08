@@ -1,0 +1,83 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+POST 1 — APIs REST com Spring Boot
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+APIs que escalam. Código que transforma carreiras. 🚀
+
+Com Spring Boot você cria endpoints REST em minutos — @GetMapping, @PostMapping, sem enrolação.
+
+Isso é o que você aprende no Método MEVA: Java real, projeto real, do zero ao deploy.
+
+Não é sobre decorar anotação. É sobre entender o que está acontecendo por baixo dos panos — e isso é o que o mercado paga bem.
+
+👇 Quer aprender do jeito certo?
+
+🔗 portaldoaluno.metodomeva.com.br
+📲 +55 11 91855-6529
+
+#Java #SpringBoot #RestAPI #DesenvolvimentoWeb #MetodoMEVA #BackendDeveloper #DevJava #JavaDeveloper #AprendaJava #CarreiraEmTI #TechBrasil #CodingBrasil #ProgramacaoJava #BackendBrasil #CleanCode
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+POST 2 — Java Streams
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Menos loops. Mais poder. ⚡
+
+Sabe aquele código cheio de for aninhado que ninguém entende depois? Java Streams resolve isso — e deixa o seu código limpo, legível e profissional.
+
+No Método MEVA você aprende programação funcional aplicada a projetos reais com Spring Boot. Não teoria: prática do dia a dia de um dev.
+
+Isso é o que separa um júnior de um pleno.
+
+🔗 portaldoaluno.metodomeva.com.br
+📲 +55 11 91855-6529
+
+#Java #JavaStreams #ProgramacaoFuncional #SpringBoot #MetodoMEVA #JavaDeveloper #BackendBrasil #AprendaJava #CodeJava #DevBrasil #LinguagemJava #CleanCode #ProgramacaoBrasil #TechBr #CarreiraDevJava
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+POST 3 — Exception Handler
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Erros bem tratados. Aplicações que o cliente confia. 🛡️
+
+Um sistema que quebra com stack trace na tela não vai para produção. @RestControllerAdvice centraliza todo o tratamento de exceções da sua API em um único lugar — organizado, profissional, escalável.
+
+No Método MEVA você aprende exatamente isso: Java e Spring Boot do jeito que o mercado exige, não do jeito que o tutorial do YouTube ensina.
+
+🔗 portaldoaluno.metodomeva.com.br
+📲 +55 11 91855-6529
+
+#Java #SpringBoot #ExceptionHandler #BestPractices #MetodoMEVA #BackendJava #DevJava #JavaProgramming #CleanCode #APIRestJava #CodingJava #TechBrasil #AprendaJava #DesenvolvimentoBackend #CarreiraEmTI
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+POST 4 — Divulgação Método MEVA
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Você quer trabalhar com tecnologia — mas não sabe por onde começar. 🤔
+
+O Método MEVA existe pra isso. Do zero ao seu primeiro emprego como Desenvolvedor Java, com projetos reais, mentoria direta e uma comunidade que te apoia em cada etapa.
+
+Sem enrolação. Sem teoria vazia. Só o que o mercado realmente exige.
+
+✔ Java + Spring Boot na prática
+✔ Portfólio profissional do zero
+✔ Suporte até você ser contratado
+
+👉 Acesse agora: portaldoaluno.metodomeva.com.br
+📲 +55 11 91855-6529
+📸 @metodomeva
+
+#MetodoMEVA #AprendaJava #SpringBoot #PrimeiroEmprego #DevJava #CursoDeJava #MentoriaJava #CarreiraEmTI #TechBrasil #JavaDeveloper #DesenvolvimentoJava #BackendBrasil #ProgramacaoBrasil #MudancaDeCarreira #EmpregoemTI
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+POST 5 — Por que Java em 2026?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Java é a linguagem que paga mais no mercado brasileiro. E os números provam. 🏆
+
+Mais de 500 mil vagas abertas. Média salarial entre R$ 8.000 e R$ 18.000/mês. Spring Boot é o framework número 1 para backend corporativo — e quem domina isso sabe o quanto vale.
+
+O Método MEVA existe para te colocar nesse mercado. Do zero ao seu primeiro emprego, com projetos reais e mentoria direta.
+
+Não espere o momento perfeito. Comece agora.
+
+👉 portaldoaluno.metodomeva.com.br
+📲 +55 11 91855-6529
+📸 @metodomeva
+
+#Java #MetodoMEVA #PorQueJava #MercadoDeTrabalho #TechBrasil #DevJava #SpringBoot #SalarioTI #CarreiraEmTI #JavaDeveloper #PrimeiroEmprego #BackendBrasil #AprendaJava #MudancaDeCarreira #EmpregoemTI
