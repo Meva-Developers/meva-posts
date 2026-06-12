@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Gerador de vídeos MP4 animados — Método MEVA
-Posts 1-3: código digita, texto desliza  |  Posts 4-5: elementos surgem em sequência
+Posts 1-3: código digita, texto desliza  |  Posts 4-6: elementos surgem em sequência
 """
 
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
@@ -20,16 +20,17 @@ def _carregar_conteudo():
         return importlib.import_module(modulo)
     except ModuleNotFoundError:
         print(f"[ERRO] Arquivo '{modulo}.py' não encontrado para hoje ({hoje}).")
-        print("       Peça ao Claude para gerar os conteúdos da semana.")
+        print("       Peça à IA para gerar os conteúdos da semana.")
         sys.exit(1)
 
 _c = _carregar_conteudo()
-DATE_STR  = _c.DATE_STR
-DAY_NAME  = _c.DAY_NAME
+DATE_STR   = _c.DATE_STR
+DAY_NAME   = _c.DAY_NAME
 POSTS_CODE = _c.POSTS_CODE
-POST4     = _c.POST4
-POST5     = _c.POST5
-LEGENDAS  = _c.LEGENDAS
+POST4      = _c.POST4
+POST5      = _c.POST5
+POST6      = getattr(_c, "POST6", None) # Proteção caso pegue um arquivo antigo com 5 posts
+LEGENDAS   = _c.LEGENDAS
 
 # ── Constantes ────────────────────────────────────────────────────────────────
 W, H     = 1080, 1080
@@ -208,8 +209,6 @@ def put_code(img, lines, n_chars, y0, fsz=26, xm=60, t=0, typing_done=False):
 
     return put(img, L)
 
-# Conteúdo do dia importado de conteudo_hoje.py
-
 # ── Renderizadores ────────────────────────────────────────────────────────────
 
 def render_code_post(t, cfg):
@@ -242,7 +241,7 @@ def render_code_post(t, cfg):
     # Código digita letra a letra — ~25 chars/s, cursor piscando
     code        = cfg["code"]
     total_chars = sum(max(len(ln), 1) for ln in code)
-    CHARS_PER_S = 60                          # 2 chars/frame @ 30fps
+    CHARS_PER_S = 60                             # 2 chars/frame @ 30fps
     type_end    = 1.8 + total_chars / CHARS_PER_S
     ct          = phase(t, 1.8, type_end)
     if ct > 0:
@@ -382,6 +381,10 @@ def render_post5(t, cfg):
 
     return np.array(img.convert("RGB"))
 
+def render_post6(t, cfg):
+    """Renderiza o POST6 usando a mesma estrutura elegante do POST4."""
+    return render_post4(t, cfg)
+
 
 # ── Gerador de vídeo ──────────────────────────────────────────────────────────
 
@@ -424,22 +427,31 @@ def create_legendas():
 if __name__ == "__main__":
     print(f"\n🎬 Gerando vídeos MP4 para {DATE_STR}_{DAY_NAME} ...\n")
 
+    # Renderiza os posts de código (1 a 3)
     for idx, cfg in enumerate(POSTS_CODE, start=1):
         make_video(render_code_post, cfg, f"{OUT_DIR}/post{idx}.mp4")
 
+    # Renderiza os posts do ecossistema/cultura (4, 5 e 6)
     make_video(render_post4, POST4, f"{OUT_DIR}/post4.mp4")
     make_video(render_post5, POST5, f"{OUT_DIR}/post5.mp4")
+    
+    if POST6:
+        make_video(render_post6, POST6, f"{OUT_DIR}/post6.mp4")
 
     create_legendas()
 
     # ── ZIP com tudo ─────────────────────────────────────────────────────────
     zip_path = f"/home/user/{DATE_STR}_{DAY_NAME}.zip"
-    entregaveis = ["post1.mp4","post2.mp4","post3.mp4","post4.mp4","post5.mp4","legendas.txt"]
+    
+    # Adicionada a garantia do post6.mp4 no array de compactação
+    entregaveis = ["post1.mp4","post2.mp4","post3.mp4","post4.mp4","post5.mp4","post6.mp4","legendas.txt"]
+    
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as z:
         for fn in entregaveis:
             fp = f"{OUT_DIR}/{fn}"
             if os.path.exists(fp):
                 z.write(fp, fn)
+                
     kb_zip = os.path.getsize(zip_path) // 1024
     print(f"\n✅ Todos os arquivos salvos em: {OUT_DIR}/")
     print(f"📦 ZIP pronto: {zip_path}  ({kb_zip} KB)\n")
