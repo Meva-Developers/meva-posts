@@ -7,7 +7,7 @@ Esta rotina é AUTOSSUFICIENTE: clona o repositório oficial na primeira execuç
 ════════════════════════════════════════════════════════════════
 BASE DE CONHECIMENTO MEVA (Diretrizes da Marca)
 ════════════════════════════════════════════════════════════════
-Use este contexto para embasar TODOS os posts, legendas e ganchos gerados:
+Use este contexto para embasar TODOS os posts, legendas e ganchos gerados. O objetivo é transmitir a cultura através do storytelling e dos ganchos, e NÃO apenas colar rótulos fixos:
 • O Ciclo MEVA: Movimento ➔ Formação ➔ Validação ➔ Squad ➔ Cliente ➔ Produto ➔ Novas Oportunidades ➔ (reinicia).
 • O Problema (Gap): Alunos estudam sem direção e não têm experiência real. Empresas gastam muito em hunting. A Meva preenche esse gap: não entregamos currículos, validamos talentos.
 • O Framework (3 Pilares):
@@ -39,7 +39,7 @@ Se o clone falhar, PARE e reporte o erro — não tente recriar os arquivos manu
 ════════════════════════════════════════════════════════════════
 PASSO 2 — Conteúdo do dia (/home/user/conteudo_AAAA-MM-DD.py)
 ════════════════════════════════════════════════════════════════
-Identifique a data de hoje. Se /home/user/conteudo_{hoje}.py NÃO existir, gere os 7 arquivos da semana (de hoje até +6 dias) com EXATAMENTE esta estrutura:
+Identifique a data de hoje. Se /home/user/conteudo_{hoje}.py NÃO existir, gere os 7 arquivos da semana (de hoje até +6 dias) com EXATAMENTE esta estrutura de 6 POSTS POR DIA. VOCÊ DEVE OBRIGATORIAMENTE GERAR 6 POSTS POR ARQUIVO:
 
     DATE_STR = "AAAA-MM-DD"
     DAY_NAME = "NomeDoDia"   # uso interno — NUNCA aparece no post visível
@@ -51,19 +51,19 @@ Identifique a data de hoje. Se /home/user/conteudo_{hoje}.py NÃO existir, gere 
     ]
 
     POST4 = dict(
-        subtitle1="CULTURA MEVA: O MOVIMENTO", subtitle2=...,
+        subtitle1=..., subtitle2=...,
         bullets=[ "✔  ...", "✔  ...", "✔  ...", "✔  ..." ],   # 4 itens, 2 espaços após ✔
         cta=...,
     )
 
     POST5 = dict(
         headline1=..., headline2=..., headline3=...,
-        stats=[ "★  ...", "✦  Média salarial de R$ 7.000/mês", "➤  ...", "◆  ..." ],
+        stats=[ "★  ...", "✦  Média salarial de R$ 8.000/mês", "➤  ...", "◆  ..." ],
         cta=...,
     )
 
     POST6 = dict(
-        subtitle1="CULTURA MEVA: A VIDA ABUNDANTE", subtitle2=...,
+        subtitle1=..., subtitle2=...,
         bullets=[ "✔  ...", "✔  ...", "✔  ...", "✔  ..." ],   # 4 itens, 2 espaços após ✔
         cta=...,
     )
@@ -78,33 +78,36 @@ REGRAS — Posts 1–3 (Código Java / Formação):
   • code = Java REAL, correto, limpo, camelCase, sem erro de sintaxe.
 
 REGRAS — Posts 4, 5 e 6 (Cultura e Ecossistema MEVA):
-  • POST4 (Movimento e o Gap): Foco em "sair da inércia" e a decisão de mudar.
+  • OBRIGATÓRIO: NUNCA escreva literalmente "Cultura MEVA", "O Movimento" ou "Vida Abundante" nos títulos. Em vez disso, CRIE ganchos atraentes que DEMONSTREM esses conceitos de forma prática e diferente a cada dia.
+  • POST4 (Movimento e o Gap): Foco prático em "sair da inércia", parar de estudar sem direção e a decisão de mudar de vida.
   • POST5 (Estrutura e Validação): Foco no mercado. As empresas não contratam currículos, nós validamos talentos.
     - Ícones do POST5 SEMPRE nesta ordem: ★ ✦ ➤ ◆
-    - NUNCA emojis 🏆💰🚀🎯 — a fonte do renderizador não os exibe (vira retângulo vazio).
+    - NUNCA emojis 🏆💰🚀🎯 — a fonte do renderizador não os exibe.
     - ✦ é SEMPRE "Média salarial de R$ 8.000/mês" — nunca outro valor.
-  • POST6 (Vida Abundante e Produtos): Foco nos produtos reais construídos e na empregabilidade.
-  • TODO o texto deve ser COMPLETAMENTE DIFERENTE a cada dia, respirando as "Frases da Marca".
+  • POST6 (Vida Abundante e Produtos): Foco nos produtos reais construídos (aplicações de IA, Finance, etc) e na transformação da carreira (empregabilidade).
+  • TODO o texto deve ser COMPLETAMENTE DIFERENTE a cada dia, respirando as "Frases da Marca" nas legendas.
 
 REGRAS GERAIS:
-  1. Salário sempre "R$ 7.000/mês" — nunca faixas como "R$ 8.000 a R$ 18.000".
-  2. NUNCA citar dia da semana em texto visível ou hashtags.
-  3. Legendas: 🔗 portaldoaluno.metodomeva.com.br · 📲 +55 11 91855-6529
+  1. OBRIGATÓRIO gerar 6 POSTS (3 de código + 3 de cultura). Não corte nem pule nenhum.
+  2. Salário sempre "R$ 8.000/mês" — nunca faixas como "R$ 8.000 a R$ 18.000".
+  3. NUNCA citar dia da semana em texto visível ou hashtags.
+  4. Legendas: 🔗 portaldoaluno.metodomeva.com.br · 📲 +55 11 91855-6529
      - Posts 4, 5 e 6 também: 📸 @metodomeva
-  4. Estilo da legenda: hook forte → pilar cultural/técnico → conexão com o Ciclo MEVA → CTA → ~15 hashtags.
-  5. Nome sempre "Método MEVA" · arroba sempre "@metodomeva".
-  6. Antes de salvar, valide cada arquivo com importlib (garante sem erro de sintaxe).
+  5. Estilo da legenda: hook forte → pilar cultural/técnico → conexão com o Ciclo MEVA → CTA → ~15 hashtags.
+  6. Nome sempre "Método MEVA" · arroba sempre "@metodomeva".
+  7. Antes de salvar, valide cada arquivo com importlib (garante sem erro de sintaxe).
 
 ════════════════════════════════════════════════════════════════
 PASSO 3 — Executar e entregar
 ════════════════════════════════════════════════════════════════
 1. Execute: python3 /home/user/gerar_videos_meva.py
-2. Entregue o ZIP gerado (/home/user/{DATA}_{DIA}.zip) no chat — sempre.
+2. Entregue o ZIP gerado (/home/user/{DATA}_{DIA}.zip) contendo os 6 VÍDEOS no chat — sempre.
 
 ════════════════════════════════════════════════════════════════
 NUNCA (REGRAS ABSOLUTAS)
 ════════════════════════════════════════════════════════════════
   • Nunca utilize afirmações absolutas de tempo para conseguir emprego; sempre utilize "em média" e NUNCA menos de 8 meses.
+  • Nunca entregue menos de 6 posts formatados no arquivo.
   • Nunca use a palavra "curso" para definir a MEVA. Somos um ecossistema/mentoria/formação.
   • Nunca gere imagens estáticas — o formato é sempre MP4 animado.
   • Nunca reescreva o renderizador com código próprio — ele vem do repositório.
