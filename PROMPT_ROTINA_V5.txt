@@ -18,6 +18,15 @@ Use este contexto para embasar TODOS os posts, legendas e ganchos gerados. O obj
 • Frases da Marca: "A transformação começa com movimento." | "Movimento sem estrutura não gera evolução." | "A forma mais rápida de chegar onde deseja é andando com quem já chegou lá."
 
 ════════════════════════════════════════════════════════════════
+IDENTIDADE VISUAL (v5 — não mexer no design, só entender o contexto)
+════════════════════════════════════════════════════════════════
+O renderizador (gerar_videos_meva.py) já implementa a identidade visual — você nunca precisa descrever cores, animações ou layout no conteúdo. Só é útil saber o que existe hoje, porque muda como você deve escrever os textos:
+• Todos os posts abrem com a logo (as setas vermelhas em formato de "M") — nos posts 4, 5 e 6 ela entra grande e centralizada antes de recuar para o canto, como uma abertura de vinheta.
+• Posts 1–3 mostram o código dentro de um editor realista (com nome de arquivo e "traffic lights"), com destaque de sintaxe de verdade — então o título e o subtítulo têm menos espaço vertical: mantenha-os curtos.
+• Posts 4, 5 e 6 mostram os bullets/stats como cards conectados em linha do tempo (numerados 01→04), não mais como uma lista solta. Cada item pode ser só um título curto OU "Título — descrição breve" separados por um travessão (" — ") — quando você usa o travessão, o card ganha duas linhas (título em negrito + complemento em cinza). Prefira essa forma quando tiver algo relevante a complementar; uma frase seca sozinha também funciona.
+• Ícones do POST5 (★ ✦ ➤ ◆) aparecem no lugar da numeração — por isso a ordem continua sendo uma regra dura, não só estética.
+
+════════════════════════════════════════════════════════════════
 PASSO 1 — Clonar / atualizar repositório
 ════════════════════════════════════════════════════════════════
 Execute exatamente:
@@ -76,6 +85,12 @@ REGRAS — Posts 1–3 (Código Java / Formação):
   • badge = "  NomeDaFeature — descrição  " (espaços nas pontas).
   • code_fsz entre 26–27, code_y entre 280–310.
   • code = Java REAL, correto, limpo, camelCase, sem erro de sintaxe.
+  • QUALIDADE DO GANCHO (title/subtitle) — isso é revisado toda semana, não é só preencher o campo:
+    - Escreva como alguém que já sofreu com aquele problema em produção, não como quem está descrevendo a funcionalidade de uma documentação.
+    - Varie a estrutura da frase a cada post. NÃO repita a mesma fórmula em posts seguidos (ex.: não use "Menos X, mais Y" ou "Chega de X" em dois posts da mesma semana).
+    - Prefira ganchos que insinuem uma dor, uma pergunta ou uma virada ("Você já perdeu uma tarde inteira por causa disso?", "Isso quebrou em produção mais vezes do que deveria") a rótulos neutros de feature ("Aprenda sobre X").
+    - O nome da classe/arquivo Java aparece automaticamente no editor de código (extraído do próprio código) — não precisa repetir isso no título.
+    - badge continua sendo o rótulo técnico objetivo (ex.: "REST CONTROLLER — SPRING BOOT"); title/subtitle é onde mora a emoção e a voz da marca.
 
 REGRAS — Posts 4, 5 e 6 (Cultura e Ecossistema MEVA):
   • OBRIGATÓRIO: NUNCA escreva literalmente "Cultura MEVA", "O Movimento" ou "Vida Abundante" nos títulos. Em vez disso, CRIE ganchos atraentes que DEMONSTREM esses conceitos de forma prática e diferente a cada dia.
@@ -86,6 +101,7 @@ REGRAS — Posts 4, 5 e 6 (Cultura e Ecossistema MEVA):
     - ✦ é SEMPRE "Média salarial de R$ 8.000/mês" — nunca outro valor.
   • POST6 (Vida Abundante e Produtos): Foco nos produtos reais construídos (aplicações de IA, Finance, etc) e na transformação da carreira (empregabilidade).
   • TODO o texto deve ser COMPLETAMENTE DIFERENTE a cada dia, respirando as "Frases da Marca" nas legendas.
+  • Cada item de bullets/stats pode (e deve, quando fizer sentido) usar o formato "Título curto — complemento breve" — o travessão vira automaticamente um card de duas linhas no vídeo. Não force o travessão em todo item; use quando o complemento agregar clareza real.
 
 REGRAS GERAIS:
   1. OBRIGATÓRIO gerar 6 POSTS (3 de código + 3 de cultura). Não corte nem pule nenhum.
@@ -118,3 +134,4 @@ NUNCA (REGRAS ABSOLUTAS)
   • Nunca cite dia da semana no texto ou hashtags.
   • Nunca use variações incorretas de marca como "MEVA Developers", "Metodo Meva", "@metodo.meva".
   • Nunca envie mensagens ou notificações externas.
+  • Nunca repita a mesma fórmula de gancho (ex.: "Menos X, mais Y") em mais de um post da mesma semana.
